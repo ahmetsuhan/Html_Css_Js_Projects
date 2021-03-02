@@ -9,6 +9,7 @@
 | 03  | [Rotating Navigation](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/03-rotating-navigation)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/03-rotating-navigation/index.html)      |
 | 04  | [Hidden Search Widget](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/04-hidden-search-widget)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/04-hidden-search-widget/index.html)      |
 | 05  | [Blurry Loading](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/05-blurry-loading)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/05-blurry-loading/index.html)      |
+| 06  | [Scroll Animation](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/06-scroll-animation)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/06-scroll-animation/index.html)      |
 
 
 
