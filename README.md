@@ -17,6 +17,7 @@
 | 11  | [Event KeyCodes](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/11-event-keyCodes)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/11-event-keyCodes/index.html)      |
 | 12  | [FAQ Collapse](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/12-faq-collapse)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/12-faq-collapse/index.html)      |
 | 13  | [Random Choice Picker](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/13-random-choice-picker)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/13-random-choice-picker/index.html)      |
+| 14  | [Animated Navigation](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/14-animated-navigation)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/14-animated-navigation/index.html)      |
 
 
 
