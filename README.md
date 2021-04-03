@@ -28,6 +28,7 @@
 | 22  | [Drawing App](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/22-drawing-app)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/22-drawing-app/index.html)      |
 | 23  | [Kinetic Css Loader](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/23-kinetic-css-loader)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/23-kinetic-css-loader/index.html)      |
 | 24  | [Content Placeholder](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/24-content-placeholder)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/24-content-placeholder/index.html)      |
+| 24  | [Sticky Navbar](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/25-sticky-navbar)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/25-sticky-navbar/index.html)      |
 
 
 
