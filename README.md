@@ -29,6 +29,7 @@
 | 23  | [Kinetic Css Loader](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/23-kinetic-css-loader)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/23-kinetic-css-loader/index.html)      |
 | 24  | [Content Placeholder](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/24-content-placeholder)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/24-content-placeholder/index.html)      |
 | 25  | [Sticky Navbar](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/25-sticky-navbar)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/25-sticky-navbar/index.html)      |
+| 26  | [Vertical Slider](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/26-double-vertical-slider)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/26-double-vertical-slider/index.html)      |
 
 
 
