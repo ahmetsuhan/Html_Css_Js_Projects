@@ -30,6 +30,7 @@
 | 24  | [Content Placeholder](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/24-content-placeholder)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/24-content-placeholder/index.html)      |
 | 25  | [Sticky Navbar](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/25-sticky-navbar)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/25-sticky-navbar/index.html)      |
 | 26  | [Vertical Slider](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/26-double-vertical-slider)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/26-double-vertical-slider/index.html)      |
+| 27  | [Toast Notification](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/27-toast-notification)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/27-toast-notification/index.html)      |
 
 
 
