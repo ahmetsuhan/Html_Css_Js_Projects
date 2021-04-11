@@ -34,6 +34,7 @@
 | 28  | [Github Profiles](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/28-github-profiles)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/28-github-profiles/index.html)      |
 | 29  | [Double Heart Click](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/29-double-heart-click)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/29-double-heart-click/index.html)      |
 | 30  | [Auto Text Effect](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/30-auto-text-effect)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/30-auto-text-effect/index.html)      |
+| 31  | [Password Generator](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/31-password-generator)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/31-password-generator/index.html)      |
 
 
 
