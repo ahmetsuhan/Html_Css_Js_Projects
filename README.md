@@ -35,6 +35,7 @@
 | 29  | [Double Heart Click](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/29-double-heart-click)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/29-double-heart-click/index.html)      |
 | 30  | [Auto Text Effect](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/30-auto-text-effect)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/30-auto-text-effect/index.html)      |
 | 31  | [Password Generator](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/31-password-generator)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/31-password-generator/index.html)      |
+| 32  | [Good-Cheap-Fast](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/32-good-cheap-fast-checkboxes)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/32-good-cheap-fast-checkboxes/index.html)      |
 
 
 
