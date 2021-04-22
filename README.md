@@ -42,6 +42,7 @@
 | 36  | [Hoverboard](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/36-hoverboard)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/36-hoverboard/index.html)      |
 | 37  | [Pokedex](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/37-pokedex)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/37-pokedex/index.html)      |
 | 38  | [Mobile Tab Navigation](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/38-mobile-tab-navigation)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/38-mobile-tab-navigation/index.html)      |
+| 39  | [Password Strength Background](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/39-password-strength-background)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/39-password-strength-background/index.html)      |
 
 
 
