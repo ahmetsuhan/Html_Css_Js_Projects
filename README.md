@@ -39,6 +39,7 @@
 | 33  | [Notes App](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/33-notes-app)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/33-notes-app/index.html)      |
 | 34  | [Animated Countdown](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/34-animated-countdown)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/34-animated-countdown/index.html)      |
 | 35  | [Image Carousel](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/35-image-carousel)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/35-image-carousel/index.html)      |
+| 36  | [Hoverboard](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/36-hoverboard)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/36-hoverboard/index.html)      |
 
 
 
