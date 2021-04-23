@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  border-radius: 0.25rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-width: 300px;
+  min-height: 575px;
+  width: 90%;
+}
+.user-popup {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 200px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem 3rem rgba(102, 51, 103, 0.25);
+}
+.user-popup.active {
+  display: flex;
+}
+
+.user-popup .left {
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding: 10px;
+}
+.user-popup .left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user-popup .left .left-text-area {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-popup .left .left-subtext {
+  line-height: 12px;
+  font-size: 10px;
+  text-align: left;
+}
+.user-popup .left .left-subtext:not(:last-child) {
+  margin-bottom: 10px;
+}
+.user-popup .right {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background-color: rebeccapurple;
+  padding: 0 15px;
+  color: #fff;
+}
+.btn {
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+.btn:active {
+  transform: scale(0.8) translateY(2px);
+}
+.btn.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.user-popup .right .right-header {
+  color: #fff;
+  text-align: center;
+}
+.user-popup .right .right-user-info {
+  font-size: 12px;
+  color: #fff;
+  word-break: break-all;
+}
+.user-popup .right .user-email {
+  font-size: 10px;
+}
+.animate-scale-rotate {
+  animation-name: scaleRotateHandler;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 5;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+}
+@keyframes scaleRotateHandler {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.5) translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(720deg) scale(1) translateY(-50%);
+  }
+}
+
+.animate-getleft {
+  animation-name: getleft;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+}
+@keyframes getleft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-getright {
+  animation-name: getright;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+}
+@keyframes getright {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.title {
+  margin: 0;
+}
+
+.subtitle {
+  display: inline-block;
+  margin: 0.3rem 0 1.25rem;
+  opacity: 0.8;
+}
+
+.header {
+  background-color: #b9bdd3;
+  color: #fff;
+  padding: 2rem 1.25rem;
+}
+
+.header input {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 3rem;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  caret-color: rebeccapurple;
+}
+.header input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header input:focus {
+  outline: 0;
+}
+
+.user-list {
+  background-color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.user-list li {
+  display: flex;
+  padding: 1.25rem;
+}
+
+.user-list img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+}
+
+.user-list .user-info {
+  margin-left: 0.6rem;
+}
+
+.user-list .user-info h4 {
+  margin: 0 0 0.6rem;
+}
+
+.user-list .user-info p {
+  font-size: 0.75rem;
+}
+
+.user-list li:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.user-list li.hide {
+  display: none;
+}
