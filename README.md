@@ -45,6 +45,7 @@
 | 39  | [Password Strength Background](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/39-password-strength-background)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/39-password-strength-background/index.html)      |
 | 40  | [3D Background Boxes](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/40-3d-background-boxes)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/40-3d-background-boxes/index.html)      |
 | 41  | [Verify Account](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/41-verify-account-ui)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/41-verify-account-ui/index.html)      |
+| 42  | [Live User Filter](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/42-live-user-filter)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/42-live-user-filter/index.html)      |
 
 
 
