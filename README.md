@@ -50,6 +50,7 @@
 | 44  | [Custom Range Slider](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/44-custom-range-slider)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/44-custom-range-slider/index.html)      |
 | 45  | [Netflix Mobile Navigation](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/45-netflix-navigation)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/45-netflix-navigation/index.html)      |
 | 46  | [Quiz App](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/46-quiz-app)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/46-quiz-app/index.html)      |
+| 47  | [Testimonial Box Switcher](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/47-testimonial-box-switcher)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/47-testimonial-box-switcher/index.html)      |
 
 
 
