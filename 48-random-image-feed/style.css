@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+.title {
+  margin: 10px 0;
+  text-align: center;
+}
+.app {
+  overflow: scroll;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px 0;
+}
+.app::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.img-container {
+  width: auto;
+  height: auto;
+  border: 1px solid;
+  cursor: pointer;
+}
+.container .img-container img {
+  object-fit: cover;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+.modal.move-down {
+  animation-name: movedown;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: 1;
+}
+.p-relative {
+  position: relative;
+}
+.modal-info-text {
+  position: absolute;
+  bottom: 50%;
+  right: -85px;
+  color: #000;
+  transform: rotateZ(-90deg) translateY(-50%);
+}
+@keyframes movedown {
+  0% {
+    top: -600px;
+  }
+  100% {
+    top: 50%;
+  }
+}
+.modal.move-up {
+  animation-name: moveup;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: 1;
+}
+@keyframes moveup {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: -600px;
+  }
+}
