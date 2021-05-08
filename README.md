@@ -52,6 +52,7 @@
 | 46  | [Quiz App](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/46-quiz-app)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/46-quiz-app/index.html)      |
 | 47  | [Testimonial Box Switcher](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/47-testimonial-box-switcher)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/47-testimonial-box-switcher/index.html)      |
 | 48  | [Random Image Feed](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/48-random-image-feed)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/48-random-image-feed/index.html)      |
+| 49  | [Catch The Insect](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/49-insect-catch-game)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/49-insect-catch-game/index.html)      |
 
 
 
