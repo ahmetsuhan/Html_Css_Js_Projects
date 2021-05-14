@@ -1,0 +1,903 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 60px;
+}
+
+/* card-1  */
+
+.card-1 {
+  width: 400px;
+  height: 350px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-1:hover .front {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: calc(100% - 50px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  box-shadow: 0 0 20px red, 0 0 40px yellow;
+
+  animation-name: topToCenter;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+.card-1:hover .front img {
+  border-radius: 50%;
+}
+.card-1:hover .back-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.card-1:hover .back {
+  z-index: 0;
+}
+
+@keyframes topToCenter {
+  0% {
+    top: 0;
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.card-1 .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.card-1 .front img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+  object-position: center;
+}
+.card-1 .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid #222;
+  z-index: -2;
+}
+.card-1 .pname {
+  font-weight: bold;
+  font-size: 24px;
+}
+.card-1 .description {
+  margin: 20px 0;
+}
+.card-1 .back-content {
+  padding: 0 60px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.card-1 .icons .fa {
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card-1 .icons .fa:not(:last-child) {
+  margin-right: 10px;
+}
+.card-1 .icons .fa:hover {
+  opacity: 0.9;
+  color: red;
+}
+
+/* card-2 */
+
+.card-2 {
+  width: 400px;
+  height: 350px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-2 .back-content {
+  opacity: 0;
+  padding: 0 60px;
+
+  transition: all 0.5s ease;
+  transform: translateY(-100px);
+}
+
+.card-2:hover .back-content {
+  opacity: 1;
+  transform: translateY(0px);
+  z-index: 800;
+}
+
+.card-2:hover .front {
+  opacity: 0;
+  top: -100%;
+  z-index: -1;
+}
+
+.card-2:hover .back {
+  z-index: 1;
+}
+
+.card-2 .back::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 200px;
+  bottom: 200px;
+  right: 50px;
+  left: 50px;
+  border-right: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  transition: all 1s ease;
+}
+
+.card-2:hover .back::before {
+  top: 30px;
+  bottom: 30px;
+}
+
+.card-2:hover .back::after {
+  right: 30px;
+  left: 30px;
+}
+
+.card-2 .back::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50px;
+  bottom: 50px;
+  right: 200px;
+  left: 200px;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  transition: all 1s ease;
+}
+
+.card-2 .pname {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card-2 .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid #222;
+  z-index: -2;
+}
+
+.card-2 .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.card-2 .front img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-2 .description {
+  margin: 20px 0;
+}
+
+.card-2 .icons .fa {
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card-2 .icons .fa:not(:last-child) {
+  margin-right: 10px;
+}
+.card-2 .icons .fa:hover {
+  opacity: 0.9;
+  color: red;
+}
+
+/* card-3 */
+.card-3 {
+  width: 400px;
+  height: 350px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-3 .see {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -3;
+  transition: all 0.5s ease;
+  transform: scale(0, 1);
+}
+
+.card-3:hover .see {
+  width: 25%;
+  transform: scale(1, 1);
+}
+
+.card-3 .see:nth-child(2) {
+  left: calc(25%);
+}
+.card-3 .see:nth-child(3) {
+  left: calc(50%);
+}
+.card-3 .see:nth-child(4) {
+  left: calc(75%);
+}
+.card-3 .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.card-3:hover .front {
+  opacity: 0;
+}
+
+.card-3 .front img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-3 .back {
+  background-color: #333;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid #222;
+  z-index: -2;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.card-3:hover .back {
+  z-index: 2;
+  color: #fff;
+  opacity: 1;
+}
+
+.card-3 .back-content {
+  backface-visibility: hidden;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+.card-3:hover .back-content {
+  transform: scale(1);
+}
+
+.card-3 .pname {
+  font-weight: bold;
+  font-size: 24px;
+}
+.card-3 .description {
+  margin: 20px 0;
+}
+
+.card-3 .icons {
+  cursor: pointer;
+}
+
+.card-3 .icons .fa {
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backface-visibility: hidden;
+}
+.card-3 .icons .fa:not(:last-child) {
+  margin-right: 10px;
+}
+.card-3 .icons .fa:hover {
+  color: orangered;
+}
+
+/* card-4*/
+.card-4 {
+  width: 400px;
+  height: 350px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-4:hover .front {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: calc(100% - 50px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  box-shadow: 0 0 20px red, 0 0 40px yellow;
+  opacity: 0;
+  transform: translateX(-100%) rotate(720deg);
+}
+.card-4:hover .front img {
+  border-radius: 50%;
+}
+.card-4:hover .back-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.card-4:hover .back {
+  z-index: 0;
+}
+
+.card-4 .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.card-4 .front img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+  object-position: center;
+}
+.card-4 .back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid #222;
+  z-index: -2;
+}
+
+.card-4 .back::before {
+  position: absolute;
+  content: "";
+  border-right: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  top: 200px;
+  bottom: 200px;
+  right: 30px;
+  left: 30px;
+  transition: all 1s ease;
+}
+.card-4 .back::after {
+  position: absolute;
+  content: "";
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  top: 50px;
+  bottom: 50px;
+  right: 200px;
+  left: 200px;
+  transition: all 1s ease;
+}
+
+.card-4:hover .back::before {
+  top: 70px;
+  bottom: 70px;
+}
+
+.card-4:hover .back::after {
+  right: 70px;
+  left: 70px;
+}
+.card-4 .pname {
+  font-weight: bold;
+  font-size: 24px;
+}
+.card-4 .description {
+  margin: 20px 0;
+}
+.card-4 .back-content {
+  padding: 0 60px;
+  transform: scale(0) translateX(-50px);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.card-4:hover .back-content {
+  transform: scale(1) translateX(-0);
+  opacity: 1;
+  z-index: 2;
+}
+
+.card-4 .icons .fa {
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card-4 .icons .fa:not(:last-child) {
+  margin-right: 10px;
+}
+.card-4 .icons .fa:hover {
+  opacity: 0.9;
+  color: red;
+}
+
+/* card-5*/
+.card-5 {
+  width: 400px;
+  height: 350px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-5:hover .front img {
+  border-radius: 50%;
+}
+
+.card-5:hover .back {
+  z-index: 0;
+}
+
+.card-5 .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewX(0deg) translateX(0);
+  backface-visibility: hidden;
+  transition: transform 0.5s ease, left 0.5s ease 0.5s, opacity 0.5s ease 0.5s;
+}
+.card-5:hover .front {
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  border-radius: 50%;
+  left: calc(100% - 50px);
+  top: 50%;
+  box-shadow: 0 0 20px red, 0 0 40px yellow;
+  transform: skewX(-20deg) translateX(-120%);
+}
+
+.card-5 .front img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-in-out;
+}
+.card-5 .back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid #222;
+  z-index: -2;
+}
+
+.card-5 .back::before {
+  position: absolute;
+  content: "";
+  border-right: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  top: 200px;
+  bottom: 200px;
+  right: 30px;
+  left: 30px;
+  transition: all 1s ease;
+}
+.card-5 .back::after {
+  position: absolute;
+  content: "";
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  top: 50px;
+  bottom: 50px;
+  right: 200px;
+  left: 200px;
+  transition: all 1s ease;
+}
+
+.card-5:hover .back::before {
+  top: 70px;
+  bottom: 70px;
+}
+
+.card-5:hover .back::after {
+  right: 70px;
+  left: 70px;
+}
+.card-5 .pname {
+  font-weight: bold;
+  font-size: 24px;
+}
+.card-5 .description {
+  margin: 20px 0;
+}
+.card-5 .back-content {
+  padding: 0 60px;
+  transform: scale(0) translateX(-50px);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.card-5:hover .back-content {
+  transform: scale(1) translateX(-0);
+  opacity: 1;
+  z-index: 2;
+}
+
+.card-5 .icons .fa {
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card-5 .icons .fa:not(:last-child) {
+  margin-right: 10px;
+}
+.card-5 .icons .fa:hover {
+  opacity: 0.9;
+  color: red;
+}
+
+/*card6 */
+
+.card-6 {
+  width: 400px;
+  height: 350px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-6:hover .back {
+  z-index: 0;
+}
+
+.card-6 .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+}
+.card-6:hover .front {
+  left: 0;
+  top: 90px;
+  transform: scale(0.3);
+  box-shadow: 0 0 40px 0 black;
+}
+
+.card-6 .front img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-in-out;
+}
+.card-6 .back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid #222;
+  z-index: -2;
+}
+
+.card-6 .pname {
+  font-weight: bold;
+  font-size: 24px;
+}
+.card-6 .description {
+  margin: 20px 0;
+}
+.card-6 .back-content {
+  padding: 0 60px;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+}
+.card-6:hover .back-content {
+  transform: translateY(-60px);
+  z-index: 2;
+}
+
+.card-6 .icons .fa {
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card-6 .icons .fa:not(:last-child) {
+  margin-right: 10px;
+}
+.card-6 .icons .fa:hover {
+  opacity: 0.9;
+  color: red;
+}
+
+/* card-7*/
+
+.card-7 {
+  width: 400px;
+  height: 350px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-7:hover .back {
+  z-index: 0;
+}
+
+.card-7 .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  backface-visibility: hidden;
+  transition: all 0.5s ease;
+  transform: translateX(0);
+  opacity: 1;
+}
+.card-7:hover .front {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.card-7 .front img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-in-out;
+}
+.card-7 .back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid #222;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+
+  background: linear-gradient(to bottom right, white, #ddd);
+  z-index: -2;
+}
+
+.card-7 .pname {
+  font-weight: bold;
+  font-size: 24px;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.6s ease;
+}
+.card-7:hover .back-content .pname {
+  transform: translateY(0);
+  opacity: 1;
+}
+.card-7 .description {
+  margin: 20px 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.card-7:hover .description {
+  opacity: 1;
+}
+.card-7 .back-content {
+  padding: 0 60px;
+  transition: all 0.6s ease;
+}
+.card-7:hover .back-content {
+  z-index: 2;
+}
+
+.card-7 .icons {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+.card-7:hover .back-content .icons {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-7 .icons .fa {
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card-7 .icons .fa:not(:last-child) {
+  margin-right: 10px;
+}
+.card-7 .icons .fa:hover {
+  opacity: 0.9;
+  color: red;
+}
+
+/* card-8*/
+
+.card-8 {
+  width: 400px;
+  height: 350px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card-8 .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(0deg);
+  transition: all 0.5s ease;
+  transform-origin: left;
+}
+.card-8:hover .front {
+  transform: rotateY(180deg);
+  box-shadow: 0 20px 40px 0 black;
+  border-left: 1px dashed black;
+}
+
+.card-8 .front img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-in-out;
+}
+.card-8 .back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: -2;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.card-8:hover .back {
+  z-index: 0;
+  outline-offset: 8px;
+  outline-style: groove;
+  opacity: 1;
+}
+
+.card-8 .pname {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card-8 .description {
+  margin: 20px 0;
+}
+
+.card-8 .back-content {
+  padding: 0 60px;
+  transition: all 0.6s ease;
+}
+.card-8:hover .back-content {
+  z-index: 2;
+}
+
+.card-8 .icons .fa {
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.card-8 .icons .fa:not(:last-child) {
+  margin-right: 10px;
+}
+.card-8 .icons .fa:hover {
+  opacity: 0.9;
+  color: red;
+}
