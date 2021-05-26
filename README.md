@@ -55,6 +55,7 @@
 | 49  | [Catch The Insect](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/49-insect-catch-game)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/49-insect-catch-game/index.html)      |
 | 50  | [Hovered Cards](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/50-hovered-cards)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/50-hovered-cards/index.html)      |
 | 51  | [Movie Seat Booking](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/51-movie-seat-booking)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/51-movie-seat-booking/index.html)      |
+| 52  | [Custom Video Player](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/52-custom-video-player)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/52-custom-video-player/index.html)      |
 
 
 
