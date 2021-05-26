@@ -58,6 +58,7 @@
 | 52  | [Custom Video Player](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/52-custom-video-player)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/52-custom-video-player/index.html)      |
 | 53  | [Form Validator](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/53-form-validator)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/53-form-validator/index.html)      |
 | 54  | [Exchange Rate Calculator](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/54-exchange-rate-calculator)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/54-exchange-rate-calculator/index.html)      |
+| 55  | [Menu Slider & Modal](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/55-menu-slider-modal)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/55-menu-slider-modal/index.html)      |
 
 
 
