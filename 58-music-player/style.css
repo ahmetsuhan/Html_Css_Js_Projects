@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+:root {
+  --color-white: #fff;
+  --color-white-half: rgba(255, 255, 255, 0.5);
+  --color-light-grey-1: rgba(247, 247, 247, 1);
+  --color-light-grey-2: #dfdbdf;
+  --color-dark-grey-1: #cdc2d0;
+  --color-light-pink-1: rgba(252, 221, 221, 1);
+  --color-light-pink-2: rgb(252, 169, 169);
+  --color-dark-pink-1: #fe8daa;
+
+  --body-background-image: linear-gradient(
+    0deg,
+    var(--color-light-grey-1) 23.8%,
+    var(--color-light-pink-1) 92%
+  );
+
+  --border-circle: 50%;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  user-select: none;
+  font-size: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+button:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-image: var(--body-background-image);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  overflow: hidden;
+  font-size: 1.6rem;
+}
+
+.music-container {
+  background-color: var(--color-white);
+  border-radius: 1.5rem;
+  box-shadow: 0 2rem 2rem 0 rgba(252, 169, 169, 0.6);
+  display: flex;
+  padding: 2rem 3rem;
+  position: relative;
+  margin: 10rem 0;
+  z-index: 10;
+}
+
+.img-container {
+  position: relative;
+  width: 11rem;
+}
+
+.img-container::after {
+  content: "";
+  display: block;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 2rem;
+  height: 2rem;
+  transform: translate(-50%, 50%);
+}
+
+.img-container img {
+  height: 11rem;
+  width: inherit;
+  border-radius: var(--border-circle);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  animation-name: musicImageRotate;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+  animation-play-state: running;
+}
+
+@keyframes musicImageRotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: var(--color-white);
+  border: none;
+  color: var(--color-light-grey-2);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0 2rem;
+}
+
+.action-btn.action-btn-big {
+  color: var(--color-dark-grey-1);
+  font-size: 3rem;
+}
+
+.music-info {
+  width: calc(100% - 4rem);
+  padding: 1rem 1rem 1rem 15rem;
+  background-color: var(--color-white-half);
+  border-radius: 1.5rem 1.5rem 0 0;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  z-index: 0;
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.progress-container {
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  height: 0.4rem;
+  width: 100%;
+}
+.progress-container .progress {
+  background-color: var(--color-dark-pink-1);
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
