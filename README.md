@@ -60,6 +60,7 @@
 | 54  | [Exchange Rate Calculator](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/54-exchange-rate-calculator)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/54-exchange-rate-calculator/index.html)      |
 | 55  | [Menu Slider & Modal](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/55-menu-slider-modal)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/55-menu-slider-modal/index.html)      |
 | 56  | [Hangman](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/56-hangman)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/56-hangman/index.html)      |
+| 57  | [Expense Tracker](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/57-expense-tracker)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/57-expense-tracker/index.html)      |
 
 
 
