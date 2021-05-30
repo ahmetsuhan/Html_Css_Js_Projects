@@ -63,6 +63,7 @@
 | 57  | [Expense Tracker](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/57-expense-tracker)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/57-expense-tracker/index.html)      |
 | 58  | [Music Player](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/58-music-player)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/58-music-player/index.html)      |
 | 59  | [Calorie Tracker App (Module Pattern)](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/59-calorie-tracker-app-with-modules-pattern)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/59-calorie-tracker-app-with-modules-pattern/index.html)      |
+| 60  | [Book List (Prototype)](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/60-book-list-prototype)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/60-book-list-prototype/index.html)      |
 
 
 
