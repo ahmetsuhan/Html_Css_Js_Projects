@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <title>Blog App</title>
+  </head>
+
+  <body class="grey lighten-3">
+    <nav class="z-depth-0 indigo lighten-4">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo"
+          ><img
+            src="https://images.unsplash.com/photo-1612392062631-94dd858cba88?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            alt=""
+            style="width: 64px; margin-top: 10px"
+        /></a>
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="logged-in" style="display: none">
+            <a
+              href="#"
+              class="red-text modal-trigger"
+              data-target="modal-account"
+              >Account</a
+            >
+          </li>
+          <li class="logged-in" style="display: none">
+            <a id="logout-btn" href="#" class="red-text">Logout</a>
+          </li>
+          <li class="logged-in" style="display: none">
+            <a
+              href="#"
+              class="red-text modal-trigger"
+              data-target="modal-create"
+              >Create an Article</a
+            >
+          </li>
+
+          <li class="logged-out" style="display: none">
+            <a
+              href="#"
+              class="grey-text modal-trigger"
+              data-target="modal-login"
+              >Login</a
+            >
+          </li>
+          <li class="logged-out" style="display: none">
+            <a
+              href="#"
+              class="grey-text modal-trigger"
+              data-target="modal-signup"
+              >Create an Account</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="modal-signup" class="modal">
+      <div class="modal-content">
+        <h4>Create an Account</h4>
+        <br />
+        <form id="signup-form">
+          <div class="input-field">
+            <input id="signup-email" type="email" required />
+            <label for="signup-email">Email:</label>
+          </div>
+          <div class="input-field">
+            <input id="signup-password" type="password" required />
+            <label for="signup-password">Password:</label>
+          </div>
+          <div class="input-field">
+            <input id="signup-bio" type="text" required />
+            <label for="signup-bio">Personel Info:</label>
+          </div>
+          <button class="btn yellow darken-2">Signup</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal-login" class="modal">
+      <div class="modal-content">
+        <h4>Signin</h4>
+        <br />
+        <form id="login-form">
+          <div class="input-field">
+            <input id="login-email" type="email" required />
+            <label for="login-email">Email:</label>
+          </div>
+          <div class="input-field">
+            <input id="login-password" type="password" required />
+            <label for="login-password">Password:</label>
+          </div>
+          <button class="btn yellow darken-2">Signin</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal-account" class="modal">
+      <div class="modal-content center-align">
+        <h4>Profile</h4>
+        <br />
+        <div class="account-details"></div>
+      </div>
+    </div>
+
+    <div id="modal-create" class="modal">
+      <div class="modal-content">
+        <h4>Create an Account</h4>
+        <br />
+        <form id="create-form">
+          <div class="input-field">
+            <input id="title" type="text" required />
+            <label for="title">Article Title</label>
+          </div>
+          <div class="input-field">
+            <textarea
+              id="content"
+              required
+              class="materialize-textarea"
+            ></textarea>
+            <label for="content">Article Content:</label>
+          </div>
+          <button class="btn yellow darken-2">Signin</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 40px">
+      <ul class="collapsible guides z-depth-0" style="border: none"></ul>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBsJe5ErV01SpeKXdfMsjlACyLR2vz1tL4",
+        authDomain: "aso-blog.firebaseapp.com",
+        projectId: "aso-blog",
+        storageBucket: "aso-blog.appspot.com",
+        messagingSenderId: "664355999834",
+        appId: "1:664355999834:web:3b9b6ef5441621c723c863",
+      };
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/auth.js"></script>
+  </body>
+</html>
