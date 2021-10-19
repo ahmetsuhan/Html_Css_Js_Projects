@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --color-1: #f48e52;
+  --color-2: #f77023;
+  --color-white: #ffffff;
+  ---color-dark: #000000;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  background-color: var(--color-1);
+  position: relative;
+  color: var(---color-dark);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: none;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+select,
+input {
+  height: 32px;
+}
+select:focus,
+input:focus {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+  border: none;
+  transform: translateY(2px);
+}
+
+.content-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.settings {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--color-white);
+  box-shadow: 0px 6px 4px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transform: translateY(-500%);
+}
+.settings.settings--disabled {
+  transform: translateY(-500%);
+  animation-name: slide-up;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-500%);
+  }
+}
+
+.settings.settings--active {
+  transform: translateY(0);
+  animation-name: slide-down;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-500%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.settings__button {
+  position: fixed;
+  left: 1rem;
+  bottom: 0.5rem;
+  height: auto;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.settings__button:hover {
+  background-color: var(---color-dark);
+}
+
+.settings__form {
+  display: flex;
+  align-items: center;
+}
+
+.settings__form__difficulty-setting-area label {
+  margin-right: 0.3rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.difficulty {
+  cursor: pointer;
+  height: 32px;
+  padding: 0.3rem 0.6rem;
+  appearance: none;
+  text-align: center;
+  border: none;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-2);
+}
+
+.app {
+  width: 350px;
+  height: auto;
+}
+
+.app__container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+.app__header {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__subheader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+.app__remaining-time {
+  font-weight: 400;
+}
+
+.app__score__text {
+  font-weight: 400;
+}
+
+.app__text-area {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.app__game-input {
+  text-align: center;
+}
+.app__game-input input {
+  width: 320px;
+  padding: 0.1rem 0.2rem;
+  border: none;
+  position: relative;
+}
+input:focus::placeholder {
+  font-size: 0;
+}
+.app__game-input input::placeholder {
+  color: #999;
+}
+
+.app__game-input::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-1);
+}
+.app__game-text {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.starter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.starter.active {
+  display: flex;
+}
+
+.starter .starter__button {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 2rem;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>👩‍💻 Go Typer Go 👨‍💻</title>
+  </head>
+  <body>
+    <div class="starter active">
+      <button class="starter__button">Start</button>
+    </div>
+    <div class="content-wrapper">
+      <div id="settings-controller">
+        <button class="settings__button">👀</button>
+      </div>
+
+      <div id="settings" class="settings settings--active">
+        <form class="settings__form">
+          <div class="settings__form__difficulty-setting-area">
+            <label for="difficulty">Difficulty</label>
+            <select name="difficulty" id="difficulty" class="difficulty">
+              <option value="easy" class="difficulty__option">
+                <span>Easy</span>
+              </option>
+              <option value="medium" class="difficulty__option">Medium</option>
+              <option value="hard" class="difficulty__option">Hard</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <div id="app" class="app">
+        <div class="app__container">
+          <div class="app__header">👩‍💻 Go Typer Go 👨‍💻</div>
+
+          <div class="app__subheader">
+            <div class="app__remaining-time-area">
+              Time Left: <span class="app__remaining-time"></span>
+            </div>
+            <div class="app_score">
+              Score: <span class="app__score__text">0</span>
+            </div>
+          </div>
+
+          <div class="app__text-area">
+            <p class="app__info-text">Type following:</p>
+            <div class="app__game-text"></div>
+          </div>
+          <div class="app__game-input">
+            <input
+              type="text"
+              autocomplete="off"
+              placeholder="Type the word here..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="end-game-container" class="end-game-container"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
