@@ -67,6 +67,7 @@
 | 61  | [Wheather Forecast](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/61-wheather-forecast-app)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/61-wheather-forecast-app/index.html)      |
 | 62  | [Blog App](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/62-blog-app)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/62-blog-app/index.html)      |
 | 63  | [Infinite Scroll](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/63-infinite-scroll-blog)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/63-infinite-scroll-blog/index.html)      |
+| 64  | [Go Typer Go](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/64-go-typer-go-app)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/64-go-typer-go-app/index.html)      |
 
 
 
