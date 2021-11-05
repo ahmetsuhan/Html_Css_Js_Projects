@@ -71,6 +71,7 @@
 | 65  | [Speech Text Reader](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/65-speech-text-reader)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/65-speech-text-reader/index.html)      |
 | 66  | [Memory Cards](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/66-memory-cards)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/66-memory-cards/index.html)      |
 | 67  | [Search Lyrics](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/67-lyrics-search-app)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/67-lyrics-search-app/index.html)      |
+| 68  | [Relaxer](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/68-relaxer)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/68-relaxer/index.html)      |
 
 
 
