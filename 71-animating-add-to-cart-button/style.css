@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.4;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+.cart-btn {
+    position: relative;
+    padding: 10px;
+    width: 200px;
+    height: 60px;
+    border:0;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.cart-btn:disabled {
+   background-color: grey;
+   cursor: default;
+}
+
+.cart-btn--primary {
+    background-color: rgb(5, 105, 226);
+}
+
+.cart-btn span {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.cart-btn span.add-to-cart {
+    opacity: 1;
+}
+
+.cart-btn span.added {
+    opacity: 0;
+}
+
+.cart-btn .cart-icon {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -10%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+}
+
+.cart-btn .cart-item {
+    position: absolute;
+    z-index: 3;
+    top: -20%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    font-size: 1.2em;
+}
+
+.cart-btn.clicked .cart-icon {
+    animation: cart 1.5s ease-in-out forwards;
+}
+
+.cart-btn.clicked .cart-item {
+    animation: box 1.5s ease-in-out forwards;
+}
+
+.cart-btn.clicked span.add-to-cart{
+    animation: add 1.5s ease-in-out forwards;
+}
+
+.cart-btn.clicked span.added {
+    animation: added 1.5s ease-in-out forwards;
+}
+
+@keyframes cart {
+    0% {
+        left: -10%;
+    }
+    40%,60% {
+        left: 50%;
+    }
+    100% {
+        left: 110%;
+    }
+}
+
+@keyframes box {
+    0%,40% {
+        top: -20%;
+    }
+    60% {
+        top: 40%;
+        left: 52%;
+    }
+    100% {
+        top: 40%; 
+        left: 112%;
+    }
+}
+
+@keyframes add {
+    0% {
+        opacity: 1;
+    }
+    20%,100% {
+       opacity: 0;
+    }
+}
+
+@keyframes added {
+    0%,80% {
+        opacity: 10;
+    }
+    100% {
+       opacity: 1;
+    }
+}
