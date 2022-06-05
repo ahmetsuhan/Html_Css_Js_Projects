@@ -74,8 +74,5 @@
 | 68  | [Relaxer](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/68-relaxer)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/68-relaxer/index.html)      |
 | 69  | [Breakout Game](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/69-breakout-game)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/69-breakout-game/index.html)      |
 | 70  | [New Year Countdown](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/70-new-year-countdown)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/70-new-year-countdown/index.html)      |
-
-
-
-
+| 71  | [Animating Add To Cart Button](https://github.com/ahmetsuhan/Html_Css_Js_Projects/tree/main/71-animating-add-to-cart-button)           | [Live Demo](https://ahmetsuhan.github.io/Html_Css_Js_Projects/71-animating-add-to-cart-button/index.html)      |
 
