@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+   background-color: #f0d4ff;
+   display: grid;
+   place-items: center;
+   font-family: "Poppins", Arial, Helvetica, sans-serif;
+   height: 100vh;
+   overflow: hidden;
+  }
+
+.drop-container {
+    background: #fff;
+    padding: 1.5rem;
+    width: 450px;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 40px 15px rgba(0, 0, 0, 0.2);
+}
+.drop {
+    border-radius: 10px;
+    border:3px dashed #aaaaaa;
+    width: 100%;
+    place-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+}
+
+.active {
+    border: 3px solid #4b4b4b;
+    background-color: #edccff;
+}
+
+.drop .icon {
+    font-size: 60px;
+    color: #a916f9;
+}
+
+.drop .text {
+    text-align: center;
+    font-weight: 500;
+    color: #443f46;
+    margin-top: 1rem;
+}
+
+.progress {
+    background-color: #a916f9;
+    width: 0%;
+    height: 20px;
+    display: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.drop label {
+    background-color:#a916f9;
+    padding: 0.7rem 1.8rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.file-input {
+    display: none;
+}
+
+.file {
+    width: 80px;
+    height: 1px;
+    background-color: #949494;
+}
+
+.or-con {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.or {
+    margin: 0 auto;
+    font-weight: 500;
+    color: #443f46;
+}
+
+

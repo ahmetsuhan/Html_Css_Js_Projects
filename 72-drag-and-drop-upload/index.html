@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Drag and Drop Upload</title>
+</head>
+
+<body>
+    <div class="drop-container">
+        <div class="drop">
+            <i class="fa-solid fa-photo-film-icon"></i>
+            <span class="text"> Drag and Drop your documents, photos and videos here.</span>
+            <div class="or-con">
+                <span class="line"></span>
+                <span class="or">OR</span>
+                <span class="line"></span>
+            </div>
+            <label for="file-upload">Browse Files</label>
+            <input type="file" id="file-upload" class="file-input" multiple>
+        </div>
+        <div class="progress"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
